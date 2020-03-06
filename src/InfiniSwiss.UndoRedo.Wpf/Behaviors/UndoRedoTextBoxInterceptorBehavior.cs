@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Infini.UndoRedo.Wpf.Behaviors
+namespace InfiniSwiss.UndoRedo.Wpf.Behaviors
 {
     /// <summary>
     /// Represents a behavior for the TextBox Elements which automatically

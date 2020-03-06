@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Infini.UndoRedo.Commands;
+using InfiniSwiss.UndoRedo.Commands;
 
-namespace Infini.UndoRedo
+namespace InfiniSwiss.UndoRedo
 {
     /// <summary>
     /// Represents the command processor.

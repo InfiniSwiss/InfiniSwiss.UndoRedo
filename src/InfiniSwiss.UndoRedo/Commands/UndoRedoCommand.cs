@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infini.UndoRedo.Commands
+namespace InfiniSwiss.UndoRedo.Commands
 {
     /// <summary>
     /// Represents a <seealso cref="IUndoRedoCommand"/> which uses actions to define <see cref="IUndoRedoCommand.Execute" /> and <see cref="IUndoRedoCommand.Revert" />.

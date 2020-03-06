@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Input;
-using Infini.UndoRedo.Commands;
+using InfiniSwiss.UndoRedo.Commands;
 using Microsoft.Xaml.Behaviors.Core;
 
-namespace Infini.UndoRedo.Wpf.Demo
+namespace InfiniSwiss.UndoRedo.Wpf.Demo
 {
     /// <summary>
     /// Represents the view model for <seealso cref="MainWindow"/>.

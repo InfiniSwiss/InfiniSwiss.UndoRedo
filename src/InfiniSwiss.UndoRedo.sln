@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29721.120
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infini.UndoRedo", "Infini.UndoRedo\Infini.UndoRedo.csproj", "{72DCD065-0327-45F5-B93C-87D5613612F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfiniSwiss.UndoRedo", "InfiniSwiss.UndoRedo\InfiniSwiss.UndoRedo.csproj", "{72DCD065-0327-45F5-B93C-87D5613612F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC64508A-3C73-4D7B-AFC4-51B674ECAD42}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infini.UndoRedo.Wpf.Demo", "Infini.UndoRedo.Wpf.Demo\Infini.UndoRedo.Wpf.Demo.csproj", "{7E15DA6B-4510-4BAF-B5BE-860878D97CAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfiniSwiss.UndoRedo.Wpf.Demo", "InfiniSwiss.UndoRedo.Wpf.Demo\InfiniSwiss.UndoRedo.Wpf.Demo.csproj", "{7E15DA6B-4510-4BAF-B5BE-860878D97CAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infini.UndoRedo.Wpf", "Infini.UndoRedo.Wpf\Infini.UndoRedo.Wpf.csproj", "{87E49B81-1390-4CAC-98E6-0E302B5A93DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfiniSwiss.UndoRedo.Wpf", "InfiniSwiss.UndoRedo.Wpf\InfiniSwiss.UndoRedo.Wpf.csproj", "{87E49B81-1390-4CAC-98E6-0E302B5A93DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

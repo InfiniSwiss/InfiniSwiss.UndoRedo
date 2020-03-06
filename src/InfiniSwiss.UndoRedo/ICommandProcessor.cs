@@ -1,6 +1,6 @@
-﻿namespace Infini.UndoRedo
+﻿namespace InfiniSwiss.UndoRedo
 {
-    using Infini.UndoRedo.Commands;
+    using InfiniSwiss.UndoRedo.Commands;
 
     /// <summary>
     /// The command processor's interface.

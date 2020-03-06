@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Infini.UndoRedo.Wpf.Demo
+namespace InfiniSwiss.UndoRedo.Wpf.Demo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml.

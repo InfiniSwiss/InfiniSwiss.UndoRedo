@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls.Primitives;
 
-namespace Infini.UndoRedo.Wpf.Behaviors
+namespace InfiniSwiss.UndoRedo.Wpf.Behaviors
 {
     /// <summary>
     /// Represents a behavior for the ToggleButton Elements which automatically

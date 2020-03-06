@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Infini.UndoRedo.Commands
+namespace InfiniSwiss.UndoRedo.Commands
 {
     /// <summary>
     /// Represents a <seealso cref="IUndoRedoCommand"/> which is used to add an item of type <see cref="TState"  /> to a collection.

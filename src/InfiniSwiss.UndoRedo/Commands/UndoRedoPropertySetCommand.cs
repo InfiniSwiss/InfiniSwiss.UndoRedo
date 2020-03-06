@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Infini.UndoRedo.Commands
+namespace InfiniSwiss.UndoRedo.Commands
 {
     /// <summary>
     /// Represents a <seealso cref="IUndoRedoCommand"/> which is used to set properties on a specific element of type <see cref="TState" />.

@@ -1,4 +1,4 @@
-﻿namespace Infini.UndoRedo.Commands
+﻿namespace InfiniSwiss.UndoRedo.Commands
 {
     /// <summary>
     /// Represents a command which can be executed or reverted.

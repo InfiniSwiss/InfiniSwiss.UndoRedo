@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infini.UndoRedo.Wpf\Infini.UndoRedo.Wpf.csproj" />
-    <ProjectReference Include="..\Infini.UndoRedo\Infini.UndoRedo.csproj" />
+    <ProjectReference Include="..\InfiniSwiss.UndoRedo.Wpf\InfiniSwiss.UndoRedo.Wpf.csproj" />
+    <ProjectReference Include="..\InfiniSwiss.UndoRedo\InfiniSwiss.UndoRedo.csproj" />
   </ItemGroup>
 
 </Project>

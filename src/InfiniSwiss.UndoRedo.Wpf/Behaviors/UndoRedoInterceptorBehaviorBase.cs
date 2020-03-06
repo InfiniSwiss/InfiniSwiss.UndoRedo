@@ -5,11 +5,11 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using Infini.UndoRedo.Commands;
+using InfiniSwiss.UndoRedo.Commands;
 using Microsoft.Xaml.Behaviors;
 using Microsoft.Xaml.Behaviors.Core;
 
-namespace Infini.UndoRedo.Wpf.Behaviors
+namespace InfiniSwiss.UndoRedo.Wpf.Behaviors
 {
     /// <summary>
     /// Represents the base for a behavior which automatically
