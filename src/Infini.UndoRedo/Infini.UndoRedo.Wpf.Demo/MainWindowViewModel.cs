@@ -70,7 +70,7 @@ namespace Infini.UndoRedo.Wpf.Demo
 
         private void IncreaseTheCounter()
         {
-            this.CommandProcessor.AddAndExecute(new UndoRedoSetPropertyCommand<MainWindowViewModel>(this, vm => vm.SomeCounter, this.SomeCounter + 1));
+            this.CommandProcessor.AddAndExecute(new UndoRedoPropertySetCommand<MainWindowViewModel>(this, vm => vm.SomeCounter, this.SomeCounter + 1));
         }
     }
 }

@@ -6,7 +6,7 @@ using Infini.UndoRedo.Commands;
 using Microsoft.Xaml.Behaviors;
 using Microsoft.Xaml.Behaviors.Core;
 
-namespace Infini.UndoRedo.Wpf
+namespace Infini.UndoRedo.Wpf.Behaviors
 {
     /// <summary>
     /// Represents a behavior for the TextBox Elements which automatically
@@ -41,7 +41,7 @@ namespace Infini.UndoRedo.Wpf
         }
 
         /// <summary>
-        /// Gets or sets the <see cref="ICommandProcessor" /> to be used.
+        /// Gets or sets the <seealso cref="ICommandProcessor" /> to be used.
         /// </summary>
         public ICommandProcessor CommandProcessor
         {
@@ -88,7 +88,7 @@ namespace Infini.UndoRedo.Wpf
 
             if (newValue != this.oldValue)
             {
-                var command = new UndoRedoSetPropertyCommand<object>(textBinding.ResolvedSource, textBinding.ResolvedSourcePropertyName, newValue);
+                var command = new UndoRedoPropertySetCommand<object>(textBinding.ResolvedSource, textBinding.ResolvedSourcePropertyName, newValue);
                 this.CommandProcessor.AddAndExecute(command);
             }
         }

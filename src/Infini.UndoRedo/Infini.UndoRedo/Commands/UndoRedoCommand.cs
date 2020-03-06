@@ -22,6 +22,9 @@ namespace Infini.UndoRedo.Commands
         }
 
         /// <inheritdoc/>
+        public bool IsRedundant => false;
+
+        /// <inheritdoc/>
         public void Execute()
         {
             this.executeAction();

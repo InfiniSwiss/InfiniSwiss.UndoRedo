@@ -6,6 +6,11 @@
     public interface IUndoRedoCommand
     {
         /// <summary>
+        /// Gets a value indicating whether this command is redundant or not.
+        /// </summary>
+        bool IsRedundant { get; }
+
+        /// <summary>
         /// Executes the command forward.
         /// </summary>
         void Execute();
