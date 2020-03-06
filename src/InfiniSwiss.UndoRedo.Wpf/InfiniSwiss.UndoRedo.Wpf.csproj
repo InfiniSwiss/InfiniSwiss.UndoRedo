@@ -1,10 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net472;net48;net462</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Authors>InfiniSwiss</Authors>
+    <Description>A small library for using Undo-Redo Commands in Wpf Applications.</Description>
+    <Copyright>InfiniSwiss</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/InfiniSwiss/InfiniSwiss.UndoRedo</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/InfiniSwiss/InfiniSwiss.UndoRedo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>InfiniSwiss, UndoRedo, Undo, Redo, Wpf</PackageTags>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +27,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InfiniSwiss.UndoRedo\InfiniSwiss.UndoRedo.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

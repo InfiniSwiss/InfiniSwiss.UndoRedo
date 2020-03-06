@@ -5,9 +5,22 @@
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <Nullable>enable</Nullable>
     <LangVersion>8</LangVersion>
+    <Authors>InfiniSwiss</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>InfiniSwiss</Copyright>
+    <PackageProjectUrl>https://github.com/InfiniSwiss/InfiniSwiss.UndoRedo</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/InfiniSwiss/InfiniSwiss.UndoRedo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Infiniswiss, UndoRedo, Undo, Redo</PackageTags>
+    <Description>A small library for using Undo-Redo Commands.</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
