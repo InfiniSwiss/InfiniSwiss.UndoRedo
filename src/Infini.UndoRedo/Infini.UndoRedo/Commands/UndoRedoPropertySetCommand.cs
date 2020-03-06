@@ -46,7 +46,7 @@ namespace Infini.UndoRedo.Commands
             this.newValue = newValue;
             this.oldValue = propertyInfo.GetValue(state);
 
-            if (this.oldValue == this.newValue)
+            if (Equals(this.oldValue, newValue))
             {
                 this.IsRedundant = true;
             }
@@ -58,7 +58,7 @@ namespace Infini.UndoRedo.Commands
         /// <param name="state">The state object.</param>
         /// <param name="propertyName">The property name of the propertiy to be set.</param>
         /// <param name="newValue">The value which needs to be set.</param>
-        public UndoRedoPropertySetCommand(TState state, string propertyName, object newValue)
+        public UndoRedoPropertySetCommand(TState state, string propertyName, object? newValue)
         {
             if (state == null)
             {
@@ -69,6 +69,11 @@ namespace Infini.UndoRedo.Commands
             this.propertyInfo = this.state.GetType().GetProperty(propertyName);
             this.newValue = newValue;
             this.oldValue = this.propertyInfo.GetValue(state);
+
+            if (Equals(this.oldValue, newValue))
+            {
+                this.IsRedundant = true;
+            }
         }
 
         /// <inheritdoc/>

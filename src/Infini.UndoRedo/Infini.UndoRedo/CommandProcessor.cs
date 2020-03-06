@@ -23,8 +23,13 @@ namespace Infini.UndoRedo
         }
 
         /// <inheritdoc/>
-        public void AddAndExecute(IUndoRedoCommand command)
+        public void AddAndExecute(IUndoRedoCommand command, bool ignoreRedundant = true)
         {
+            if (ignoreRedundant && command.IsRedundant)
+            {
+                return;
+            }
+
             if (this.commands.Count == 0)
             {
                 this.commands.Add(command);

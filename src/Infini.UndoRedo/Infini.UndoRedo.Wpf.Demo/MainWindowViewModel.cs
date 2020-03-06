@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Input;
 using Infini.UndoRedo.Commands;
 using Microsoft.Xaml.Behaviors.Core;
@@ -39,7 +40,7 @@ namespace Infini.UndoRedo.Wpf.Demo
         /// <summary>
         /// Gets or sets some string property to be bound in the view.
         /// </summary>
-        public string? SomeStringValue
+        public string? UndoRedoTextBoxStringValue
         {
             get => this.GetValue<string>();
             set => this.Set(value);
@@ -48,9 +49,72 @@ namespace Infini.UndoRedo.Wpf.Demo
         /// <summary>
         /// Gets or sets some string property to be bound in the view.
         /// </summary>
-        public string? SomeOtherStringValue
+        public string? SimpleTextBoxStringValue
         {
             get => this.GetValue<string>();
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public IList<string> ComboBoxOptions
+        {
+            get => this.GetValue<IList<string>>(new List<string>() { "Option 1", "Option 2", "Option 3" });
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public string? UndoRedoNonEditableComboboxStringValue
+        {
+            get => this.GetValue<string>();
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public string? SimpleNonEditableComboboxStringValue
+        {
+            get => this.GetValue<string>();
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public string? UndoRedoEditableComboboxStringValue
+        {
+            get => this.GetValue<string>();
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public string? SimpleEditableComboboxStringValue
+        {
+            get => this.GetValue<string>();
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public bool? UndoRedoCheckBoxBooleanValue
+        {
+            get => this.GetValue<bool?>(null);
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public bool? SimpleCheckBoxBooleanValue
+        {
+            get => this.GetValue<bool?>(null);
             set => this.Set(value);
         }
 
