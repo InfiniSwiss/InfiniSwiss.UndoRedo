@@ -18,7 +18,7 @@ namespace Infini.UndoRedo.Wpf.Demo
             this.CommandProcessor = new CommandProcessor();
             this.UndoCommand = new ActionCommand(() => this.CommandProcessor.Undo());
             this.RedoCommand = new ActionCommand(() => this.CommandProcessor.Redo());
-            this.AddCounterCommand = new ActionCommand(() => this.IncreaseTheCounter());
+            this.AddCounterCommand = new ActionCommand(this.IncreaseTheCounter);
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Infini.UndoRedo.Wpf.Demo
         public ICommand AddCounterCommand { get; }
 
         /// <summary>
-        /// Gets or sets some string property to be binded in the view.
+        /// Gets or sets some string property to be bound in the view.
         /// </summary>
         public string? SomeStringValue
         {
@@ -46,7 +46,16 @@ namespace Infini.UndoRedo.Wpf.Demo
         }
 
         /// <summary>
-        /// Gets or sets some string property to be binded in the view.
+        /// Gets or sets some string property to be bound in the view.
+        /// </summary>
+        public string? SomeOtherStringValue
+        {
+            get => this.GetValue<string>();
+            set => this.Set(value);
+        }
+
+        /// <summary>
+        /// Gets or sets some string property to be bound in the view.
         /// </summary>
         public int SomeCounter
         {
