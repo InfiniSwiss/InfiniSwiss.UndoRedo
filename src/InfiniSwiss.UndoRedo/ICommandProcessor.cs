@@ -1,6 +1,6 @@
-﻿namespace Infini.UndoRedo
+﻿namespace InfiniSwiss.UndoRedo
 {
-    using Infini.UndoRedo.Commands;
+    using InfiniSwiss.UndoRedo.Commands;
 
     /// <summary>
     /// The command processor's interface.
@@ -11,7 +11,8 @@
         /// Adds and executes a command in the current processor.
         /// </summary>
         /// <param name="command">The command to be added and executed.</param>
-        void AddAndExecute(IUndoRedoCommand command);
+        /// <param name="ignoreRedundant">Indicates if the command processor should ignore redundat commands. Default value is true.</param>
+        void AddAndExecute(IUndoRedoCommand command, bool ignoreRedundant = true);
 
         /// <summary>
         /// Reverts the last command executed.

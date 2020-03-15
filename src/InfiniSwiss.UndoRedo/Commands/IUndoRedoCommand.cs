@@ -1,10 +1,15 @@
-﻿namespace Infini.UndoRedo.Commands
+﻿namespace InfiniSwiss.UndoRedo.Commands
 {
     /// <summary>
     /// Represents a command which can be executed or reverted.
     /// </summary>
     public interface IUndoRedoCommand
     {
+        /// <summary>
+        /// Gets a value indicating whether this command is redundant or not.
+        /// </summary>
+        bool IsRedundant { get; }
+
         /// <summary>
         /// Executes the command forward.
         /// </summary>

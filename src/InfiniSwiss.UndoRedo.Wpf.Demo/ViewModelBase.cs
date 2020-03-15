@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Infini.UndoRedo.Wpf.Demo
+namespace InfiniSwiss.UndoRedo.Wpf.Demo
 {
     /// <summary>
     /// Represets the base of ViewModels with an implementation for <seealso cref="INotifyPropertyChanged"/>.

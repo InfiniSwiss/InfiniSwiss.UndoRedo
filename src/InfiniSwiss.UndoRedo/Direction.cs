@@ -1,4 +1,4 @@
-﻿namespace Infini.UndoRedo
+﻿namespace InfiniSwiss.UndoRedo
 {
     /// <summary>
     /// Represents the direction to execute a <see cref="Commands.IUndoRedoCommand" /> command.

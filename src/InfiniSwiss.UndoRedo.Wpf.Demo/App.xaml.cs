@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Infini.UndoRedo.Wpf.Demo
+namespace InfiniSwiss.UndoRedo.Wpf.Demo
 {
     /// <summary>
     /// Interaction logic for App.xaml
